@@ -8,15 +8,15 @@ export class LoginPage {
   }
 
   get usernameInput() {
-    return this.page.locator('#user-name');
+    return this.page.getByTestId('username');
   }
 
   get passwordInput() {
-    return this.page.locator('#password');
+    return this.page.getByTestId('password');
   }
 
   get loginButton() {
-    return this.page.locator('[data-test="login-button"]');
+    return this.page.getByTestId('login-button');
   }
 
   get errorMessage() {
